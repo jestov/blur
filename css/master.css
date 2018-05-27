@@ -57,4 +57,5 @@ img{
   border-radius: 50%;
   max-height: 50vh;
   margin: 0 4vh;
+  align-self: center;
 }
