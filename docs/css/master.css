@@ -1,31 +1,25 @@
+@import url('https://rsms.me/inter/inter-ui.css');
 body,html{
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Inter UI',sans-serif;
   position: relative;
   margin: 0;
   height: 100%;
 }
 .logo{
-  width: 45px;
-  height: 45px;
-  color:#fff;
-  background: transparent;
-  font-size: 29px;
-  position: fixed;
-  top:1rem;
-  left: 1rem;
-  border-radius: 50%;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-  z-index: 2;
-  border:1px solid rgba(255,255,255,0.3);
+    position: fixed;
+    top: 30px;
+    z-index: 3;
+    left: 30px;
+}
+.logo img{
+    border-radius: 50%;
 }
 .github{
   font-size: 2rem;
   position: fixed;
-  top:0.5em;
-  right: 0.7em;
-  color:#fff;
+  top: 30px;
+  right: 30px;
+  color: #fff;
   z-index: 3;
 }
 .container{
@@ -65,18 +59,23 @@ body,html{
   z-index: 1;
 }
 h1{
-  color: #fff;
   align-self: center;
-  line-height: 0.7;
-  font-size: 40px;
-  text-align: center;
+  line-height: 0.4;
+  font-size: 3.5rem;
+  text-align: right;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.9);
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 h1 small{
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 300;
-  font-family: 'IBM Plex Sans',sans-serif;
+  color: #fff;
+  letter-spacing: normal;
+   -webkit-text-stroke: 0px rgba(255,255,255,0.8);
 }
-img{
+.container img{
   max-width: 100%;
   border-radius: 50%;
   max-height: 50vh;
@@ -84,13 +83,12 @@ img{
   align-self: center;
 }
 footer{
-  width: 100%;
-  padding: 4vh 0;
-  text-align: center;
-  font-size: 18px;
+  width: calc(100% - 20vw);
+  padding: 4vh 10vw;
+  text-align: right;
+  font-size: 12.5px;
   color: #ddd;
   font-weight: 300;
-  font-family: 'IBM Plex Sans', sans-serif;
   position: fixed;
   bottom: 0;
   z-index: 2;
